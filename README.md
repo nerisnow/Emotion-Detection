@@ -50,8 +50,21 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    
 
 
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+## Installing cookiecutter
+```
+conda config --add channels conda-forge
+conda install cookiecutter
+```
+
+## Installing pre-commit 
+```
+conda install pre-commit
+```
+[Pre-commit hooks](https://pre-commit.com/) are also added. `.pre-commit-config.yaml` is the pre-commit configuration file.
