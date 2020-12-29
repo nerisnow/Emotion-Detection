@@ -1,7 +1,7 @@
-Emotion-Detection
+ISEAR - Emotion-Detection Project
 ==============================
 
-Emotion Detection Training Project
+Emotion Detection Training Project at Fusemachines - Training for AI Engineers
 
 Project Organization
 ------------
