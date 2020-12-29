@@ -1,7 +1,7 @@
 Emotion-Detection
 ==============================
 
-Emotion-DEtection
+Emotion Detection Training Project
 
 Project Organization
 ------------
