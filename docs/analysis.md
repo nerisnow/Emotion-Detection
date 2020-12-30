@@ -1,0 +1,61 @@
+# **CLIENT PROJECT : EMOTION DETECTION AND ANALYSIS**
+
+### **Epic**:
+
+As an Admin, I want a system that is able to classify reviews regarding my AI courses, into different human emotions so that I can integrate the review summarization data as a feedback in the further improvement of the courses, without the need of manual data annotators.
+
+### **User Story**:
+
+As a user, I want a system that takes my student review as its inputs so that the reviews reach the content creators.
+As an Admin, I want the system to classify the incoming student reviews into 5 different human emotions namely: anger, sadness, fear, happiness, excitement.
+As a user, I want the system to correctly identify the intent of my review so that the right feedback reaches the creators.
+As an admin, I want the system to output an easy visualization of the result rather than a probabilistic result so that all my teammates from various departments can interpret the results.
+As an Admin, I want the system to be faster in terms of the time taken to classify a certain student review, compared to a human data annotator so that the feedback can be integrated early.
+
+
+### **Problem and Solution Formation**:
+
+#### What is the problem?
+I need a system that tells me which kind of emotion is a given review depicting?
+
+
+Formally, Task (T) - Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement.
+
+Experience (E) - a dataset consisting of 784,349 samples of informal short English messages (i.e. a collection of English tweets), with one of the 5 emotion classes labelled in each of them: anger, sadness, fear, happiness, excitement
+
+Performance (P) - Classification accuracy, precision and recall.
+
+#### Assumptions:
+
+The specific words in the reviews matter to the model.
+The reviews will be written in the English language.
+Each review is independent of the other.
+
+
+#### Similar problems:
+Email spam detection
+Social media comments analysis
+Restaurant review analysis
+Clickbait title detection
+
+#### Why does this problem need to be solved?
+ Data Annotation is quite a tiresome manual task when you look at a bunch of reviews coming from the users. Moreover, not all reviews are meaningful for the improvement of the product. Automating the classification of reviews would save time and energy of data annotators and also make it easy for them to look into specific classes of reviews, rather than the whole bulk.
+This solution could save the company time as well as money for hiring full time data annotators solely dedicated to go through the feedback alone.
+The proposed solution can be used not just for a specific course, but for other similar problem scenarios where one needs to summarize and analyze student reviews.
+The system however, needs to be updated timely, as the real-time data changes according to the course. The changes include model retraining, with new incoming training data.
+
+
+#### How would I solve the problem?
+Manually, we would hire data annotators who would go through each review and classify them according to the need basis.
+For this, the data would be received directly from student online reviews and feedback.
+This method would not be consistent, as each annotator would have their own way of interpreting reviews. Some reviews might also be skipped because of lack of understanding itself. Moreover, detecting sarcastic reviews would also be a potential barrier in correct interpretation and classification of reviews. Not all annotators would be familiar with all kinds of idioms used in the feedback. Hence, the diversity in the language used could also act as a barrier if we propose a manual solution.
+
+
+Using a Machine Learning approach, we would propose a solution in the following way:
+
+
+
+### **Performance Metrics for the solution**:
+
+
+ ### **Data Required for completing the project**:
