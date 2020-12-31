@@ -8,6 +8,10 @@ Since we have the details of the project but not the company, we can arbitrarily
 
 Fusemachines’ goal is to “Democratize AI” i.e. to empower local communities by giving them opportunities  to build the next generation of AI products. One of the key ways to do so, is to provide AI education that can be easily accessible to people of every race, gender and background. Fusemachines operate in three levels of services: Fuse Classroom, Fuse Education and Fuse Talents.
 
+**1.1. Where is the company headed?**
+
+The company is mainly focused in Education Solutions like Fuse Classroom and Fuse education in Nepalese Market. Enrollment of a hundred thousand students is the immediate objective.
+
 
 #### 2. Context of Product:
 
@@ -55,6 +59,7 @@ The manual needs to go through each and every feedback particularly not knowing 
 **3.5. Given only text data without facial expressions and voice recordings, how do we approach this problem?**
 
 This task can be tackled using lexicon-based methods, machine learning, or a concept-level approach. Here, we are exploring how we can achieve this task via a machine learning approach, specifically using the deep learning technique.
+
 
 #### 4. About the data
 
@@ -105,8 +110,14 @@ Since it is highly possible the proportion of “neutral” sentences outweigh t
 
 The dataset used in this experiment consists of 784,349 samples of informal short English messages (i.e. a collection of English tweets), with 5 emotion classes: anger, sadness, fear, happiness, excitement where 60% is used for training, 20% for validation and 20% for testing.
 
-#### 5. Caveats
+**4.8. Do you have internal data-dedicated team?**
 
+There are two engineers working with the data. They are as follows:
+- Nirisha Manadhar ([Nirisha Manandhar](mailto:nirisha@fusemachines.com))
+- Kamal Shrestha  ([Kamal Shrestha](mailto:kamal.shrestha@fusemachines.com))
+
+#### 5. Caveats
+-  The system should be easily integratable into the existinf Fuse Classroom Platform.
 
 #### 6. Performance Metrics
 
@@ -119,20 +130,23 @@ The dataset used in this experiment consists of 784,349 samples of informal shor
 
 #### 7. What is the deadline for this project?
 
-Jan 9, 2021
+The system needs to have the bare minimums with in a month. Any additions or reiterations of the mode will have flexible timelines.
 
 
 #### 8. What is the acceptance criteria? Any bar that we need to meet?
 
+Based on an input feedback, the system needs to classify the emotion of the feedback and compare it with the mannual categorisation. For now, roughly the system with accuracy more than 80% can be acceptable.
+
 
 **Is there any immediate platform that will be using this model?**
+- This emotion detection system to classify feedbacks from students can be applied in the Fuse Classroom Platform.
 
 **If yes, any integration pre-information that we should be aware of?**
+
 
 **Is there any platforms performing the similar objectives?**
 - [Parallel Dots](https://www.paralleldots.com/emotion-analysis)
 - [Twinword (2020): Emotion Analysis](https://www.twinword.com/api/emotion-analysis.php)
-
 
 
 ### Related Papers
