@@ -10,6 +10,7 @@ As an Admin, I want a system that is able to classify reviews regarding my AI co
 - As an Admin, I want the system to classify the incoming student reviews into 5 different human emotions namely: anger, sadness, fear, happiness, excitement.
 - As a user, I want the system to correctly identify the intent of my review so that the right feedback reaches the creators.
 - As an admin, I want the system to output an easy visualization of the result rather than a probabilistic result so that all my teammates from various departments can interpret the results.
+- As an Admin, I want the system to group the reviews according to the classified emotions so that it is convenient for me to check the review summarization according to my need.
 - As an Admin, I want the system to be faster in terms of the time taken to classify a certain student review, compared to a human data annotator so that the feedback can be integrated early.
 
 
@@ -19,7 +20,8 @@ As an Admin, I want a system that is able to classify reviews regarding my AI co
 I need a system that tells me which kind of emotion is a given review depicting?
 
 
-Formally, Task (T) - Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement.
+Formally, Task (T) - Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement and group those reviews for a better visualization.
+
 
 Experience (E) - a dataset consisting of 784,349 samples of informal short English messages (i.e. a collection of English tweets), with one of the 5 emotion classes labelled in each of them: anger, sadness, fear, happiness, excitement
 
