@@ -17,21 +17,20 @@ As an Admin, I want a system that is able to classify reviews regarding my AI co
 ### **Problem and Solution Formation**:
 
 #### What is the problem?
-I need a system that tells me which kind of emotion is a given review depicting?
+I need a system that tells me which kind of emotion is a given review depicting.
 
 
-Formally, Task (T) - Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement and group those reviews for a better visualization.
+Formally,
 
-
-Experience (E) - a dataset consisting of 784,349 samples of informal short English messages (i.e. a collection of English tweets), with one of the 5 emotion classes labelled in each of them: anger, sadness, fear, happiness, excitement
-
-Performance (P) - Classification accuracy, precision and recall.
+| Task (T) | Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement and group those reviews for a better visualization. |
+| Experience (E) | A dataset consisting of 784,349 samples of informal short English messages  with one of the 5 emotion classes labelled in each of them: anger, sadness, fear, happiness, excitement. |
+| Performance (P) | It would be considered a success if the accuracy or f1 score of the model is over 50% for test data|
 
 #### Assumptions:
 
-The specific words in the reviews matter to the model.
-The reviews will be written in the English language.
-Each review is independent of the other.
+- The reviews are labeled.
+- The reviews will be written in the English language.
+- Each review is independent of the other.
 
 
 #### Similar problems:
@@ -47,22 +46,27 @@ The proposed solution can be used not just for a specific course, but for other 
 The system however, needs to be updated timely, as the real-time data changes according to the course. The changes include model retraining, with new incoming training data.
 
 
-#### How would I solve the problem?
-- Manually, we would hire data annotators who would go through each review and classify them according to the need basis.
-For this, the data would be received directly from student online reviews and feedback.
-This method would not be consistent, as each annotator would have their own way of interpreting reviews. Some reviews might also be skipped because of lack of understanding itself. Moreover, detecting sarcastic reviews would also be a potential barrier in correct interpretation and classification of reviews. Not all annotators would be familiar with all kinds of idioms used in the feedback. Hence, the diversity in the language used could also act as a barrier if we propose a manual solution.
-
-
-- Using a Machine Learning approach, we would propose a solution in the following way:
-
-
-
-### **Performance Metrics for the solution**:
-
-
  ### **Data Required for completing the project**:
 - The data available to us is a dataset consisting of 784,349 samples of informal short English messages (i.e. a collection of English tweets), with 5 emotion classes: anger, sadness, fear, happiness, excitement where 60% is used for training, 20% for validation and 20% for testing.
 - The available data are tweets and not any kind of review.
 - Currently, the company is  storing their student review data in Google Sheets directly filled from the feedback coming from Google Form reviews from the students.
 - The company does have data annotators who go through the reviews. Moreover, the company also has a separate team for Data and Analytics.
 - Other sources of data that can be integrated into the training process include the reviews from the students taking the courses.
+
+
+#### How would I solve the problem?
+- Manually, we would hire data annotators who would go through each review and classify them according to the need basis.
+For this, the data would be received directly from student online reviews and feedback.
+This method would not be consistent, as each annotator would have their own way of interpreting reviews. Some reviews might also be skipped because of lack of understanding itself. Moreover, detecting sarcastic reviews would also be a potential barrier in correct interpretation and classification of reviews. Not all annotators would be familiar with all kinds of idioms used in the feedback. Hence, the diversity in the language used could also act as a barrier if we propose a manual solution.
+
+
+- Using a **Machine Learning approach**, we would propose a solution in the following way:
+1. Since it is an NLP task and specifically a classification problem, a baseline approach could be to use a simple Naive Bayes classifier for the emotion classification.
+2. Other approaches could includea Random Forest Classifier or a Support Vector Classification.
+
+
+### **Performance Metrics for the solution**:
+
+The Perfomance metric that will be monitored for this system are:
+- Accuracy Score
+- F1 Score
