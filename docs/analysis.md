@@ -22,10 +22,11 @@ I need a system that tells me which kind of emotion is a given review depicting.
 
 Formally,
 
-| Task (T) | Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement and group those reviews for a better visualization. |
+|        |          |  |
+| ------------- |:-------------:| -----:|
+|Task (T)| Classify an unseen review in terms of the emotion it conveys: anger, sadness, fear, happiness, excitement and group those reviews for a better visualization|
 | Experience (E) | A dataset consisting of 784,349 samples of informal short English messages  with one of the 5 emotion classes labelled in each of them: anger, sadness, fear, happiness, excitement. |
 | Performance (P) | It would be considered a success if the accuracy or f1 score of the model is over 50% for test data|
-
 #### Assumptions:
 
 - The reviews are labeled.
