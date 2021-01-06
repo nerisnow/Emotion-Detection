@@ -1,5 +1,6 @@
 import os
 
+# Training For AI Engineers
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 DATA_PATH = os.path.join(BASE_DIR, "data", "raw")
@@ -15,3 +16,7 @@ CHECKPOINT_PATH = os.path.join(BASE_DIR, "checkpoints")
 EMOTIONS = {"anger": 1, "fear": 2, "joy": 3, "sadness": 4, "shame": 5}
 
 REMOVED_EMOTIONS = ["disgust", "guilt"]
+
+PROCESSED_DATA_PATH = os.path.join(BASE_DIR, "data", "processed")
+
+TEST_SIZE = 0.2
