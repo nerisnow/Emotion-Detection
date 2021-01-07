@@ -49,10 +49,12 @@ def process_data(
     # Pickling Processed DataFrame
     processed_data_path = os.path.join(config.PROCESSED_DATA_PATH, "processed_data.pkl")
     if os.path.exists(processed_data_path):
-        print("[INFO]: DataFrame already pickled !!")
+        print("[INFO: build_features/process_data()]: DataFrame already pickled !!")
     else:
         df.to_pickle(processed_data_path)
-        print("[INFO]: DataFrame successfully pickled !!")
+        print(
+            "[INFO: build_features/process_data()]: Data Pre-Processing Complete and Saved !!"
+        )
 
     # Create Corpus and Target set
     corpus = df["lemmatised_tokens"].apply(" ".join).tolist()
@@ -66,18 +68,18 @@ def process_data(
     if processor_engine == "SKLEARN":
         processor = TfidfProcessor()
         processor.create_vectorizer()
-        x_train_vectors = processor.transform_text(x_train)
+        x_train_vectors = processor.fit_transform_text(x_train)
         x_test_vectors = processor.transform_text(x_test)
 
         print(
-            "[INFO]: Vectors: Train Size: {} & Test Size: {}".format(
+            "[INFO: build_features/process_data]: Vectors: Train Size: {} & Test Size: {}".format(
                 np.shape(x_train_vectors), np.shape(x_test_vectors)
             )
         )
     else:
         print("[ERROR]: Processor Engine Invalid !! ")
 
-    return x_train_vectors, y_train, x_test_vectors, y_test, processor_engine
+    return x_train_vectors, y_train, x_test_vectors, y_test, processor
 
 
 def generate_lemma(df, col):

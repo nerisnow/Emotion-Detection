@@ -53,6 +53,10 @@ class TfidfProcessor:
         )
         return True
 
-    def transform_text(self, text_list):
+    def fit_transform_text(self, text_list):
         text_matrix = self.vectorizer.fit_transform(text_list).toarray()
+        return text_matrix
+
+    def transform_text(self, text_list):
+        text_matrix = self.vectorizer.transform(text_list)
         return text_matrix

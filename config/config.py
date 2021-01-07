@@ -13,7 +13,15 @@ MODEL_PATH = os.path.join(BASE_DIR, "models")
 
 CHECKPOINT_PATH = os.path.join(BASE_DIR, "checkpoints")
 
-EMOTIONS = {"anger": 1, "fear": 2, "joy": 3, "sadness": 4, "shame": 5}
+EMOTIONS = {
+    "anger": 1,
+    "fear": 2,
+    "joy": 3,
+    "sadness": 4,
+    "shame": 5,
+    "disgust": 6,
+    "guilt": 7,
+}
 
 REMOVED_EMOTIONS = ["disgust", "guilt"]
 
