@@ -6,7 +6,7 @@ from emotiondetection.config import config
 def save_object(checkpoint_path, folder_name, file_name, object_name):
     """"""
 
-    print("[INFO]: Saving {}".format(file_name))
+    print("[INFO]: Saving file:{}".format(file_name))
 
     if not os.path.exists(os.path.join(config.BASE_DIR, "checkpoints", folder_name)):
         os.makedirs(os.path.join(config.BASE_DIR, "checkpoints", folder_name))
@@ -19,5 +19,5 @@ def save_object(checkpoint_path, folder_name, file_name, object_name):
 
 
 if __name__ == "__main__":
-    dogs = {"key": 1}
-    print(save_object(config.CHECKPOINT_PATH, "kamal", "dogs", dogs))
+    obj = {"key": 1}
+    print(save_object(config.CHECKPOINT_PATH, "folder_name", "file_name", obj))
