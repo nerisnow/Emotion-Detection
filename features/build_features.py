@@ -14,8 +14,8 @@ def process_data(
 ):
     """Process data with respect to the processor engine
 
-    This function will process the text data from the given processor and store them
-    in the checkpoints directory
+    This function will process the text data from the given processor and return the
+    vectorised forms of those data
 
     Parameters:
     -----------

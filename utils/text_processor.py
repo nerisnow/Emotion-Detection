@@ -18,6 +18,7 @@ def text_processor(text):
 
     Returns: List
     List of tokenised and processed words
+    Processing includes:    Lowecase, Special Characters Removal, Tokenisation, Decontraction and Stopwords removals
 
     """
     # clean the words, remove symbols special chars
