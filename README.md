@@ -5,54 +5,67 @@ Emotion Detection Training Project at Fusemachines - Training for AI Engineers
 
 Project Organization
 ------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+.
+├── api
+│   ├── app.py
+│   ├── config
+│   │   ├── config.py
+│   ├── data
+│   │   └── db
+│   ├── services
+│   │   ├── predictor.py
+│   ├── static
+│   │   ├── banner.jpg
+│   │   └── feedback.png
+│   ├── templates
+│   │   ├── feedback.png
+│   │   ├── index.html
+│   │   └── predict.html
+│   └── urls.py
+├── checkpoints
+│   ├── processor
+│   │   └── processor.pkl
+│   └── SKLEARN
+│       └── multinominal_naive_bayes.pkl
+├── data
+│   ├── processed
+│   │   └── processed_data.pkl
+│   └── raw
+│       └── ISEAR.csv
+├── Dockerfile
+├── emotiondetection
+│   ├── config
+│   │   ├── config.py
+│   │   ├── model_params.py
+│   │   └── tfidf_parameters.py
+│   ├── data
+│   │   └── make_dataset.py
+│   ├── dispatcher
+│   │   ├── dispatcher.py
+│   ├── features
+│   │   ├── build_features.py
+│   ├── main.py
+│   ├── models
+│   │   ├── test_model.py
+│   │   └── train_model.py
+│   ├── README.md
+│   ├── utils
+│   │   ├── lemmatiser.py
+│   │   ├── save_object.py
+│   │   ├── stemmer.py
+│   │   ├── text_processor.py
+│   │   └── tfidfprocessor.py
+│   └── visualisation
+│       └── visualize.py
+├── LICENSE
+├── Makefile
+├── notebooks
+│   ├── emotiondetection.ipynb
+├── README.md
+├── requirements.txt
+├── test_environment.py
+└── tox.ini
     
-
-
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
