@@ -70,8 +70,7 @@ def test_pipeline(model, input_text):
 
     # Load Saved Model
     with open(
-        os.path.join(config.CHECKPOINT_PATH, "SKLEARN", f"{model}.pkl"),
-        "rb",
+        os.path.join(config.CHECKPOINT_PATH, "SKLEARN", f"{model}.pkl"), "rb",
     ) as f:
         model = pickle.load(f)
 

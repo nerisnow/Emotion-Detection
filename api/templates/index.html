@@ -17,7 +17,6 @@
     }
 
     body,
-    div,
     form,
     input,
     select,
@@ -32,6 +31,10 @@
         line-height: 22px;
     }
 
+    div {
+        background-image: url('feedback.png');
+    }
+
     h1 {
         position: absolute;
         margin: 0;
@@ -43,9 +46,11 @@
 
     .testbox {
         display: flex;
+        margin: auto;
         justify-content: center;
         align-items: center;
         height: inherit;
+        width: 40%;
         padding: 20px;
     }
 
@@ -58,23 +63,22 @@
     }
 
     .banner {
-        position: relative;
         height: 400px;
-        background-image: url("feedback.png");
+        background-image: url("/static/banner.jpg");
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: auto;
 
     }
 
-    .banner::after {
+    /* .banner::after {
         content: "";
-        background-color: rgba(0, 0, 0, 0.3);
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+        background-image: url("/static/feedback.png");
+        width: 100px;
+        height: 10%;
+    } */
 
     input,
     select,
@@ -105,12 +109,13 @@
     .item textarea:hover {
         border: 1px solid transparent;
         box-shadow: 0 0 6px 0 #d6e0f5;
-        color: #d6e0f5;
+        color: #000102;
     }
 
     .item {
         position: relative;
         margin: 10px 0;
+        color: #000102;
     }
 
     .btn-block {
@@ -150,6 +155,7 @@
             enctype="multipart/form-data">
             <div class="banner">
                 <h1>Emotion Detection System</h1>
+
             </div>
             <div class="item">
                 <p>Your Full Name</p>
@@ -163,7 +169,7 @@
 
             <div class="item">
                 <p>Your Review</p>
-                <textarea rows="3" name="review"></textarea>
+                <textarea rows="3" name="review" required></textarea>
             </div>
 
             <div class="btn-block">

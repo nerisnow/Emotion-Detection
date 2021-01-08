@@ -1,56 +1,30 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-        body {
-            font-family: Arial;
-            color: white;
-        }
-
-        .left,
-        .right {
-            height: 50%;
-            width: 50%;
-            position: fixed;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .left {
-            left: 0;
-            background-color: rgb(36, 0, 95);
-        }
-
-        .right {
-            right: 0;
-            background-color: rgb(56, 1, 44);
-        }
-
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .centered img {
-            width: 150px;
-            border-radius: 50%;
-        }
-    </style>
-</head>
+<title>Predictions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <body>
-    <h1 style="color: black;">Two column layout grid example</h1>
-    <div class="left">
-        <h1>Your feedback : {{input_text}}</h1>
+
+    <div class="w3-container">
+        <div class="w3-card-4"
+            style="width:30%; position: relative; margin: auto; margin-top: 300px;">
+            <header class="w3-container w3-light-grey">
+                <h3>Predictions</h3>
+            </header>
+            <div class="w3-container">
+                <p>User Feedback: </p>
+                <hr>
+                <!-- <img src="img_avatar3.png" alt="Avatar"
+                    class="w3-left w3-circle w3-margin-right"
+                    style="width:60px"> -->
+                <p><b>{{input_text}}</b></p><br>
+            </div>
+            <button class="w3-button w3-block w3-dark-grey">Predicted Emotion:
+                <b><i>{{output}}</i></b></button>
+        </div>
     </div>
-    <div class="right">
-        <h1>Predicted emotion: {{output}}</h1>
-    </div>
+
 </body>
 
 </html>
