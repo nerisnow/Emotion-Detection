@@ -5,7 +5,7 @@ Emotion Detection Training Project at Fusemachines - Training for AI Engineers
 
 Project Organization
 ------------
-.
+```
 ├── api
 │   ├── app.py
 │   ├── config
@@ -67,7 +67,7 @@ Project Organization
 └── tox.ini
     
 --------
-
+```
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
 
 ## Installing cookiecutter
